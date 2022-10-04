@@ -1,5 +1,5 @@
 {
-  "name": "utawaku-hololive",
+  "name": "utawaku-sera",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "daisyui": "^2.31.0",
+    "dayjs": "^1.11.5",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.6.1",
+    "jsdom": "^20.0.0",
+    "moment": "^2.29.4",
+    "net": "^1.0.2",
     "next": "12.3.1",
+    "next-less": "^1.1.0",
+    "node-fetch": "^2.6.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-youtube": "^10.0.0",
+    "swr": "^1.3.0",
+    "youtube-comment-scraper": "^0.2.2"
   },
   "devDependencies": {
+    "@types/node": "18.7.23",
+    "@types/react": "18.0.21",
+    "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.4"
   }
 }
