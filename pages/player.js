@@ -59,7 +59,7 @@ export default function Player() {
     })
 
     document.getElementById("start").addEventListener("click", function () {
-      event.target.seekTo(className.query.time, true);
+      event.target.seekTo(Router.query.time, true);
     })
 
     document.getElementById("end").addEventListener("click", function () {
