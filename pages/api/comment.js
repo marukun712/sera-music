@@ -55,5 +55,5 @@ async function getid() {
         if (err) console.log(`error!::${err}`);
     });
 }
-getid();
+module.exports = { getid };
 
