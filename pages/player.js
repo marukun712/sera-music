@@ -5,13 +5,13 @@ import Image from "next/image";
 import $ from 'jquery'
 
 export default function player() {
-  const router = useRouter();
+  const Router = useRouter();
   const opts = {
     width: 400,
     height: 225,
     playerVars: {
-      start: router.query.time,
-      end: router.query.end,
+      start: Router.query.time,
+      end: Router.query.end,
       autoplay: 1
     },
   };
@@ -59,11 +59,11 @@ export default function player() {
     })
 
     document.getElementById("start").addEventListener("click", function () {
-      event.target.seekTo(router.query.time, true);
+      event.target.seekTo(className.query.time, true);
     })
 
     document.getElementById("end").addEventListener("click", function () {
-      event.target.seekTo(router.query.end, true);
+      event.target.seekTo(Router.query.end, true);
     })
 
     document.getElementById("range").addEventListener(`input`, function () {
@@ -104,7 +104,7 @@ export default function player() {
     <div className="player md:flex">
       <div className="md:px-40">
         <YouTube
-          videoId={router.query.id}
+          videoId={Router.query.id}
           opts={opts}
           onReady={_onReady}
           onError={_onError}
@@ -116,7 +116,7 @@ export default function player() {
       <div className="fetch h-screen" style={{ overflow: 'scroll' }}><Fetch /></div>
       <div className="fixed bottom-0 w-screen">
         <div className="bg-white dark:bg-gray-800 rounded-tl-xl sm:rounded-t-xl p-4 pb-6 sm:p-8 lg:p-4 lg:pb-6 xl:p-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8">
-          <input type="range" min={router.query.time} max={router.query.end} step="1" className="range range-primary" id='range' />
+          <input type="range" min={Router.query.time} max={Router.query.end} step="1" className="range range-primary" id='range' />
         </div>
         <div className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white lg:rounded-b-xl py-1 sm:px-3 lg:px-1 xl:px-3 grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-5 xl:grid-cols-7 items-center">
           <button type="button" className="hidden sm:block lg:hidden xl:block mx-auto" id='start'>
