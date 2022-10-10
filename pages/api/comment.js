@@ -1,7 +1,7 @@
 var apikey = 'AIzaSyASFbBIOoXju0Oz_xfprimUWUAx4FuiogI';
 const fetch = require('node-fetch');
 var list = 'PLhu18ozRJ5d3XLfoeUw6WQxGJAydvC-iL'
-const fs = require('fs');
+import fs from 'fs'
 
 var result = []
 
