@@ -25,14 +25,13 @@ const Home = () => {
       var end = stamp[i + 1]?.item.time
       var s = time.split(':').reduce((acc, time) => (60 * acc) + +time);
       var e = end?.split(':').reduce((acc, time) => (60 * acc) + +time);
-
       dom.push(
-        <a href={`/player?id=${id}&time=${s}&end=${e}`} class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <a href={`/player?id=${id}&time=${s}&end=${e}`} className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
           <Image src={image} width={'500%'} height={'300%'}></Image>
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white w-96">{music}</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 w-96">{title}</p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 w-96">{time}</p>
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white w-96">{music}</h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 w-96">{title}</p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 w-96">{time}</p>
           </div>
         </a>)
     }
