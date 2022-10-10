@@ -1,11 +1,11 @@
-import { useRouter } from "next/router";
+import { UseRouter } from "next/router";
 import YouTube from 'react-youtube';
 import Fetch from "../components/fetch";
 import Image from "next/image";
 import $ from 'jquery'
 
 export default function player() {
-  const Router = useRouter();
+  const Router = UseRouter();
   const opts = {
     width: 400,
     height: 225,
