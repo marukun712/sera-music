@@ -1,8 +1,8 @@
-var apikey = 'AIzaSyASFbBIOoXju0Oz_xfprimUWUAx4FuiogI';
-const fetch = require('node-fetch');
-var list = 'PLhu18ozRJ5d3XLfoeUw6WQxGJAydvC-iL'
-import fs from 'fs'
+var fs = require('fs')
+var fetch = require('node-fetch')
 
+var apikey = 'AIzaSyASFbBIOoXju0Oz_xfprimUWUAx4FuiogI';
+var list = 'PLhu18ozRJ5d3XLfoeUw6WQxGJAydvC-iL'
 var result = []
 
 async function getid() {
@@ -55,5 +55,7 @@ async function getid() {
         if (err) console.log(`error!::${err}`);
     });
 }
-module.exports = { getid };
+module.exports = {
+    getid
+};
 
