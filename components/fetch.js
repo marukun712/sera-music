@@ -6,7 +6,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Home = () => {
   const { data, error } = useSWR(
-    "https://sera-music.vercel.app/api/api",
+    "https://marukunserver.ml:4200/api",
     fetcher
   );
 
