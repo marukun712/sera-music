@@ -6,7 +6,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Home = () => {
   const { data, error } = useSWR(
-    "https://marukunserver.ml:4200/api",
+    "https://marukun-dev.com/youtube/sera",
     fetcher
   );
 
